@@ -1,6 +1,7 @@
 {
   "name": "redux-essentials-example",
   "version": "1.0.0",
+  "homepage": "https://davidko5.github.io/posting-app-react-redux",
   "private": true,
   "dependencies": {
     "@mswjs/data": "^0.8.4",
@@ -23,8 +24,10 @@
     "txtgen": "^2.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "prettier": "^2.0.2"
   },
   "msw": {
